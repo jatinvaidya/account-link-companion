@@ -17,7 +17,7 @@ function library(user, context, callback) {
 			query: {
 				...context.request.query,
 				client_id: configuration.COMPANION_CLIENT_ID,
-				redirect_uri: `${configuration.COMPANION_URL}/callback`,
+				redirect_uri: `https://${configuration.COMPANION_HOST}/callback`,
 			},
 		};
 
