@@ -79,8 +79,6 @@ function library(user, context, callback) {
 	};
 
 	const mustLinkAccountBeforeLogin = () => {
-		// for SingPass, this predicate would be:
-		// return isEmpty(reverse_linkpass_uid);
 		user.app_metadada = user.app_metadata || {};
 		return !!user.app_metadata.link_me && user.identities.length === 1;
 	};
